@@ -7,6 +7,52 @@
     <title>Contact Page</title>
 </head>
 <body>
-    <h1>Contact Page</h1>
+    <header>
+        <h1>{timCodes;}</h1> <!--Placeholder for logo-->
+
+        <nav>
+            <ul>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-email">
+            <h2>Contact</h2>
+            <p>Contact me blurb</p>
+        </section>
+
+        <section class="contact-form">
+            <form action="" method="POST">
+                <label for="name">Name</label>
+                <br>
+                <input type="text" id="name" name="name" required>
+                <br><br>
+                <label for="email-address">Email Address</label>
+                <br>
+                <input type="text" id="email-address" name="email-address" required>
+                <br><br>
+                <label for="phone-number">Phone Number</label>
+                <br>
+                <input type="number" id="phone-number" name="phone-number">
+                <br><br>
+                <label for="enquiry">Enquiry</label>
+                <br>
+                <textarea name="enquiry" id="enquiry" cols="30" rows="10"></textarea>
+                <br><br>
+            </form>
+        </section>
+        
+
+    </main>
+
+
+    <footer>
+        <p>Copyright info</p>
+    </footer>
 </body>
 </html>
