@@ -57,7 +57,7 @@ nav ul li {
 ul li a {
     background-color: hsl(346, 57%, 47%);
     border: 1px solid hsl(346, 57%, 37%);
-    border-radius: 10%;
+    border-radius: 0.625rem;
     padding: 1rem 2rem;
     text-decoration: none;
     color: 	hsl(211, 22%, 89%);
@@ -69,4 +69,51 @@ ul li a {
 ul li a:hover {
     color: hsl(346, 57%, 47%);
     background-color: hsl(211, 22%, 79%);
+}
+
+h2 {
+    background-color: hsl(346, 57%, 47%);
+    color: hsl(211, 22%, 79%);
+    padding: 1rem 1rem;
+    width: 30%;
+    border-radius: 0.625rem;
+}
+
+.about-me {
+    width: 60%;
+    margin: auto;
+    /* display: flex;
+    flex-direction: column;
+    align-items: space-evenly; */
+}
+
+.about-me p {
+    width: 60%;
+}
+
+.projects {
+    width: 60%;
+    margin: auto;
+    padding-top: 2rem;
+}
+
+.project-flex {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.project-flex div {
+    width: 60%;
+}
+
+.project-flex img {
+    border-radius: 0.625rem;
+    width: 30%;
+}
+
+.skills {
+    width: 60%;
+    margin: auto;
+    padding-top: 2rem;
 }
