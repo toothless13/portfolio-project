@@ -300,10 +300,13 @@ footer span {
         display: block;
     }
 
-    /* .btn {
-        position: relative;
-        right: 0;
-    } */
+    .show {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        z-index: 2;
+    }
 
     .about-me {
         padding-top: 1rem;
