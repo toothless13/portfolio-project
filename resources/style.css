@@ -11,6 +11,13 @@ body {
     color: hsl(346, 57%, 47%);
 }
 
+main {
+    width: 60%;
+    margin: auto;
+    min-height: 100vh;
+    /* position: relative; */
+}
+
 /* Header Section */
 
 header {
@@ -33,7 +40,7 @@ header {
 }
 
 nav {
-    width: 60%;
+    /* width: 60%; */
     border-top: solid 2px hsl(346, 57%, 47%);
 }
 
@@ -80,7 +87,7 @@ h2 {
 }
 
 .about-me {
-    width: 60%;
+    /* width: 60%; */
     margin: auto;
     /* display: flex;
     flex-direction: column;
@@ -88,12 +95,12 @@ h2 {
 }
 
 .about-me p {
-    width: 60%;
+    /* width: 60%; */
 }
 
 .projects {
-    width: 60%;
-    margin: auto;
+    /* width: 60%; */
+    /* margin: auto; */
     padding-top: 2rem;
 }
 
@@ -104,7 +111,7 @@ h2 {
 }
 
 .project-flex div {
-    width: 60%;
+    /* width: 60%; */
 }
 
 .project-flex img {
@@ -113,7 +120,48 @@ h2 {
 }
 
 .skills {
-    width: 60%;
-    margin: auto;
+    /* width: 60%; */
+    /* margin: auto; */
     padding-top: 2rem;
+}
+
+.skills-flex {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.contact-email {
+    /* width: 60%; */
+    /* margin: auto; */
+}
+
+.socials {
+    width: 30%;
+    /* margin: auto; */
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+}
+
+.socials a {
+    display: inline-block;
+    width: 10%;
+}
+
+.socials a img {
+    /* display: inline; */
+    width: 100%;
+}
+
+/* Footer section */
+
+footer {
+    display: block;
+    /* position: absolute; */
+    bottom: 0;
+    /* left: 0; */
+    padding: 2rem 0;
+    width: 100%;
+    height: 3rem;
 }
