@@ -118,8 +118,8 @@ h2 {
 
 .project-flex img {
     border-radius: 0.625rem;
-    width: 30%;
-    flex: 1;
+    width: 20.1875rem;
+    /* flex: 1; */
 }
 
 .skills {
@@ -199,4 +199,81 @@ footer a {
 
 footer span {
     font-size: 0.5rem;
+}
+
+/* Media Queries */
+
+/* 1024 x 840 */
+
+@media only screen and (max-width: 1024px) {
+    main {
+        width: 80%;
+    }
+}
+
+/* 768 x 840 */
+
+@media only screen and (max-width: 768px) {
+
+    main {
+        font-size: 14px;
+    }
+    .project-flex {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 0;
+        flex-wrap: wrap;
+    }
+    
+    .project-flex div {
+        /* width: 60%; */
+        padding-right: 1rem;
+        /* flex: 1; */
+        /* width: 50%; */
+    }
+    
+    .project-flex img {
+        border-radius: 0.625rem;
+        /* width: 30%; */
+        width: 15rem;
+        object-fit: contain;
+        /* flex: 1; */
+    }
+}
+
+/* 650 x 840 */
+
+@media only screen and (max-width: 650px) {
+    h2 {
+        margin: auto;
+        width: 80%;
+        text-align: center;
+    }
+
+    .project-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-flex div {
+        text-align: center;
+    }
+}
+
+/* 320 x 840 */
+
+@media only screen and (max-width: 320px) {
+    main {
+        width: 90%;
+        margin: auto;
+    }
+
+    .skills-flex {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .skills-flex img {
+        flex-shrink: 1;
+    }
 }
