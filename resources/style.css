@@ -103,6 +103,7 @@ h2 {
 .about-me {
     /* width: 60%; */
     margin: auto;
+    padding-top: 2rem;
     /* display: flex;
     flex-direction: column;
     align-items: space-evenly; */
@@ -255,7 +256,7 @@ footer span {
 
 /* 650 x 840 */
 
-@media only screen and (max-width: 650px) {
+/* @media only screen and (max-width: 650px) {
     h2 {
         margin: auto;
         width: 80%;
@@ -270,11 +271,11 @@ footer span {
     .project-flex div {
         text-align: center;
     }
-}
+} */
 
 /* 649 x 840 */
 
-@media only screen and (max-width: 649px) {
+@media only screen and (max-width: 650px) {
     main {
         width: 90%;
         margin: auto;
@@ -386,8 +387,23 @@ footer span {
         transition: 0.2s;
     }
 
+    h2 {
+        margin: auto;
+        width: 80%;
+        text-align: center;
+    }
+
     .about-me {
-        padding-top: 1rem;
+        padding-top: 2rem;
+    }
+
+    .project-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-flex div {
+        text-align: center;
     }
 
     .skills-flex {

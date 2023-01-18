@@ -32,7 +32,7 @@ window.addEventListener("resize", function() {
     const headerHeight = +header.offsetHeight;
     dropMenu.style.top = headerHeight + "px";
     main.style.top = headerHeight + "px";
-    console.log(dropMenu.style.top);
+    // console.log(main.style.top);
   });
   
 // const headerHeight = +header.offsetHeight;
