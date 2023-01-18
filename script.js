@@ -27,6 +27,10 @@ document.documentElement.addEventListener("click", () => {
     }
 });
 
+const headerHeight = +header.offsetHeight;
+dropMenu.style.top = headerHeight + "px";
+main.style.top = headerHeight + "px";
+
 window.addEventListener("resize", function() {
     // update your variables
     const headerHeight = +header.offsetHeight;
