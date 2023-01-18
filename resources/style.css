@@ -272,9 +272,9 @@ footer span {
     }
 }
 
-/* 320 x 840 */
+/* 649 x 840 */
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 649px) {
     main {
         width: 90%;
         margin: auto;
@@ -290,22 +290,100 @@ footer span {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        background-color: hsl(211, 22%, 79%);
+    }
+
+    header.active {
+        position: fixed;
+        top: 0;
+        z-index: 1;
+        width: 100%;
+    }
+
+    main.active {
+        position: relative;
+        /* top: 40.69px; */
+        top: 3%;
     }
 
     nav.desktop {
+        border: none;
         display: none;
+        position: fixed;
+        width: 100%;
+        top: 10%;
+        right: 0;
+        margin-right: 0;
+        margin-left: 0;
+        flex-direction: column;
+    }
+
+    nav.desktop ul {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin-right: 0;
+        margin: 0;
+        margin-top: 1rem;
+        right: 0;
+        /* margin-top: 0; */
+    }
+    
+    nav.desktop ul li {
+        list-style-type: none;
+        margin: 0;
+        margin-right: 1.25rem;
+        /* width: 6rem; */
+        width: 100%;
+        display: block;
+        /* flex: 0 1 15%; */
+        flex: 0;
+        text-align: right;
+    }
+    
+    ul li a {
+        display: inline-block;
+        /* width: 5rem; */
+        width: 100%;
+        margin: 0;
+        background-color: hsl(346, 57%, 47%);
+        /* border: 1px solid hsl(346, 57%, 37%); */
+        border: none;
+        border-radius: 0;
+        /* padding: 0.5rem 0.5rem; */
+        padding: 0.25rem;
+        text-decoration: none;
+        color: 	hsl(211, 22%, 89%);
+        font-size: 100%;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    ul li a:active {
+        background-color: hsl(211, 22%, 89%);
+        color: hsl(346, 57%, 47%);
+    }
+
+    ul li a:hover {
+        background-color: hsl(346, 57%, 37%);
+    }
+
+    nav.desktop.active {
+        display: flex;
     }
 
     nav.mobile {
         display: block;
+        margin-right: 1%;
     }
 
-    .show {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        justify-content: center;
-        z-index: 2;
+    .btn.active {
+        background-color: hsl(346, 57%, 37%);
+        color: hsl(211, 22%, 79%);
+        transition: 0.2s;
     }
 
     .about-me {
