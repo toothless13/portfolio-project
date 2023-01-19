@@ -1,3 +1,4 @@
+// Dropdown Responsive Navbar
 const dropNavBtn = document.getElementById("btn");
 const dropMenu = document.getElementById("desktop-nav");
 const header = document.querySelector("header");
@@ -39,6 +40,8 @@ window.addEventListener("resize", function() {
     // console.log(main.style.top);
   });
 
+
+// Projects carousel  
 document.querySelectorAll(".carousel").forEach(carousel => {
     const items = carousel.querySelectorAll(".carousel-item");
     const buttonsHtml = Array.from(items, () => {
@@ -46,7 +49,7 @@ document.querySelectorAll(".carousel").forEach(carousel => {
     });
 
     carousel.insertAdjacentHTML("beforeend", `
-        <div class="carousel-nav">
+        <div class="carousel-nav" id="carousel-nav">
             ${buttonsHtml.join("")}
         </div>
     `);
@@ -68,3 +71,29 @@ document.querySelectorAll(".carousel").forEach(carousel => {
     items[0].classList.add("carousel-item-selected");
     buttons[0].classList.add("carousel-button-selected");
 });
+// Store the carousel-nav div in a variable
+const carouselNav = document.getElementById("carousel-nav");
+// Function to check screen width and hide or show carousel nav based on this
+const checkScreenWidth = () => {
+    let screenWidth = window.innerWidth;
+    console.log(screenWidth);
+    if (screenWidth <= 768) {
+        console.log(screenWidth);
+        console.log("if test");
+        carouselNav.style.display = "none";
+    } else {
+        console.log(screenWidth);
+        console.log("else test");
+        carouselNav.style.display = "flex";
+    }
+}
+// Call screen width function to set page intially
+checkScreenWidth();
+// Check screen width on resize event and call checkScreenWidth to ensure carousel nav is shown when needed
+window.addEventListener("resize", checkScreenWidth);
+
+//Figure out how to only have carousel functionality on sizes above 768px
+//Figure out how to add transitions
+// Make sure the project flex sections are all the same height
+// Have text next to image for each project flex
+// Think about centring main headings
