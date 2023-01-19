@@ -93,6 +93,3 @@ checkScreenWidth();
 window.addEventListener("resize", checkScreenWidth);
 
 //Figure out how to add transitions
-// Make sure the project flex sections are all the same height
-// Have text next to image for each project flex
-// Think about centring main headings
