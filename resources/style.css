@@ -20,6 +20,10 @@ main {
     /* position: relative; */
 }
 
+h3 {
+    margin-top: 0;
+}
+
 /* Header Section */
 
 header {
@@ -135,7 +139,8 @@ h2 {
     border-radius: 0.625rem;
     width: 20.1875rem;
     height: fit-content;
-    flex: 0 1;
+    /* flex: 0 1; */
+    flex-shrink: 1;
 }
 
 .carousel-item {
@@ -248,9 +253,9 @@ footer span {
 
 /* Media Queries */
 
-/* 1024 x 840 */
+/* 1300 x 840 */
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1300px) {
     main {
         width: 80%;
     }
@@ -269,7 +274,7 @@ footer span {
         width: 80%;
         text-align: center;
     }
-    
+
     .project-flex {
         display: flex;
         justify-content: space-between;
