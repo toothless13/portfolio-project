@@ -92,7 +92,6 @@ checkScreenWidth();
 // Check screen width on resize event and call checkScreenWidth to ensure carousel nav is shown when needed
 window.addEventListener("resize", checkScreenWidth);
 
-//Figure out how to only have carousel functionality on sizes above 768px
 //Figure out how to add transitions
 // Make sure the project flex sections are all the same height
 // Have text next to image for each project flex
