@@ -194,6 +194,10 @@ h2 {
     width: 4rem;
 }
 
+.contact-email p {
+    padding-top: 1rem;
+}
+
 a.mail-link {
     /* text-decoration: none; */
     color: hsl(346, 57%, 37%);
